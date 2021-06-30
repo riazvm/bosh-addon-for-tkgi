@@ -1,15 +1,15 @@
 ---
-name: tkgi-pre-run-scipt
+name: tkgi-pre-run-script
 
 releases:
-- name: tkgi-pre-run-scipt
+- name: tkgi-pre-run-script
   version: 0+dev.1
 
 addons:
-  - name: pre-run-scipt
+  - name: pre-run-script
     jobs:
-    - name: pre-run-scipt
-      release: tkgi-pre-run-scipt
+    - name: pre-run-script
+      release: tkgi-pre-run-script
 
     include: 
       jobs:
