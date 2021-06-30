@@ -1,20 +1,16 @@
 ---
-name: tkgi-pre-run-script
+name:  tkgi-update-ringbuffer
 
 releases:
-- name: tkgi-pre-run-script
+- name:  tkgi-update-ringbuffer
   version: 0+dev.1
 
 addons:
-  - name: pre-run-script
+  - name:  tkgi-update-ringbuffer
     jobs:
-    - name: pre-run-script
-      release: tkgi-pre-run-script
-
+    - name: update-ringbuffer
+      release:  tkgi-update-ringbuffer
     include: 
       jobs:
-      - name: pks-api
-        release: pks-api
-
-      stemcell:
-      - os: ubuntu-xenial
+      - name: kubelet
+        release: kubo
