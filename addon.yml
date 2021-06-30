@@ -1,0 +1,20 @@
+---
+name: tkgi-pre-run-scipt
+
+releases:
+- name: tkgi-pre-run-scipt
+  version: 0+dev.1
+
+addons:
+  - name: pre-run-scipt
+    jobs:
+    - name: pre-run-scipt
+      release: tkgi-pre-run-scipt
+
+    include: 
+      jobs:
+      - name: pks-api
+        release: pks-api
+
+      stemcell:
+      - os: ubuntu-xenial

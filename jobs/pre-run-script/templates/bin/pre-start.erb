@@ -1,0 +1,5 @@
+#!/bin/sh
+
+sudo apt-get install ethtool
+sudo ethtool -G ethX rx 2048
+sudo ethtool -G ethX tx 2048

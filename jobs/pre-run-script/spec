@@ -1,0 +1,10 @@
+---
+name: pre-run-scipt
+
+templates:
+  bin/pre-start.erb: bin/pre-start
+
+
+packages: []
+
+properties: {}
