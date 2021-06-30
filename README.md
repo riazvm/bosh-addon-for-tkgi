@@ -16,7 +16,7 @@ BOSH_CLIENT=ops_manager BOSH_CLIENT_SECRET=ougHtXSkv_3Vi1tOKuA2G-bvSqdq2dP8 BOSH
 3. Copy or clone this repository onto this BOSH CLI workstation and create+upload the BOSH release to the director
 
 ```
-git clone https://github.com/riazvm/bosh-addon-for-tkgi && cd tkgi-pre-run-scipt
+git clone https://github.com/riazvm/bosh-addon-for-tkgi && cd bosh-addon-for-tkgi
 bosh create-release --force
 bosh upload-release ./dev_releases/tkgi-pre-run-scipt/tkgi-pre-run-scipt-0+dev.1.yml
 
