@@ -1,0 +1,7 @@
+#!/bin/bash -e
+  
+sudo apt-get install ethtool || true
+sudo ethtool -G eth0 rx 2048 || true
+sudo ethtool -G eth0 tx 2048 || true
+
+exit 0
