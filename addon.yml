@@ -3,7 +3,7 @@ name:  tkgi-update-ringbuffer
 
 releases:
 - name:  tkgi-update-ringbuffer
-  version: 0+dev.1
+  version: 0+dev.9
 
 addons:
   - name:  tkgi-update-ringbuffer

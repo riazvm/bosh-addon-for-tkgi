@@ -1,0 +1,10 @@
+name: tkgi-update-ringbuffer
+version: 0+dev.7
+commit_hash: 2c37465
+uncommitted_changes: true
+jobs:
+- name: update-ringbuffer
+  version: a83b17ea43bea46346d18cf5c9277cf852c58d6d20e00de7ea2663380f59fabf
+  fingerprint: a83b17ea43bea46346d18cf5c9277cf852c58d6d20e00de7ea2663380f59fabf
+  sha1: sha256:12e1d4ae467867c2594b85b170626f2f39396e4d9ed502fb1a49d00b985c3b1e
+  packages: []

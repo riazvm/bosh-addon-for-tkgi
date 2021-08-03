@@ -1,14 +1,12 @@
 #!/bin/bash -e
-[ -z "$DEBUG" ] || set -x
-  
-kubectl="/var/vcap/packages/kubernetes/bin/kubectl --kubeconfig=/var/vcap/jobs/kubelet/config/kubeconfig"
-  
-until ${kubectl} get nodes -o wide -L bosh.id | grep -e ' Ready' | grep "<%= spec.id %>$"; do
-    sleep 2
-done
-  
-sudo apt-get install ethtool
-sudo ethtool -G ethX rx 2048
-sudo ethtool -G ethX tx 2048
+
+echo "hello post"
+set -xv
+sudo apt-get install -y ethtool || true
+sudo dpkg -i *.deb
+echo "hello 2"
+sudo ethtool -G eth0 rx 2048 || true
+echo "echo 3"
+sudo ethtool -G eth0 tx 2048 || true
 
 exit 0
