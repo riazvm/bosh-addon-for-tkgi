@@ -1,6 +1,10 @@
 #!/bin/bash -e
+
+set -x
+DEBIAN_FRONTEND=noninteractive
   
-sudo apt-get install ethtool || true
+#sudo apt-get install ethtool || true
+dpkg -i ethtool.deb
 sudo ethtool -G eth0 rx 2048 || true
 sudo ethtool -G eth0 tx 2048 || true
 
