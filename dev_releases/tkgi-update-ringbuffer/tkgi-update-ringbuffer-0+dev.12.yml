@@ -1,0 +1,16 @@
+name: tkgi-update-ringbuffer
+version: 0+dev.12
+commit_hash: b099bfd
+uncommitted_changes: false
+jobs:
+- name: ethtool
+  version: 229f95824c08912461bb4144f4649bcb414a68d944828f42faf73b1b4c4ace13
+  fingerprint: 229f95824c08912461bb4144f4649bcb414a68d944828f42faf73b1b4c4ace13
+  sha1: sha256:c4fe400276a4e9952ec20068e8ac15ced83b14fb7bb38b9e52a42456f193dcb3
+  packages: []
+packages:
+- name: ethtool
+  version: 0cd5bac4f020765ed9176f2c0b2887ec167da2d7d49dd4b3a1cf31859145c52f
+  fingerprint: 0cd5bac4f020765ed9176f2c0b2887ec167da2d7d49dd4b3a1cf31859145c52f
+  sha1: sha256:a71f8abc87a2bf3f4d727b49986a1030a316ffc20552b306f157ba4309b1ee9a
+  dependencies: []
