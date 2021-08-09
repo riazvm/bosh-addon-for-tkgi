@@ -5,8 +5,8 @@ set -xv
 #sudo apt-get install -y ethtool || true
 sudo dpkg -i *.deb
 echo "hello 2"
-sudo ethtool -G eth0 rx 2048 || true
+sudo ethtool -G eth0 rx 800 || true
 echo "echo 3"
-sudo ethtool -G eth0 tx 2048 || true
+sudo ethtool -G eth0 tx 800 || true
 
 exit 0
