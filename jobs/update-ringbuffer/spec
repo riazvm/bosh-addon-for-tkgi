@@ -1,5 +1,5 @@
 ---
-name: ethtool
+name: update-ringbuffer
 
 templates: 
   pre-start.erb: bin/pre-start
